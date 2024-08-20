@@ -1,0 +1,374 @@
+import React from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarMenuToggle,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  DropdownTrigger,
+  NavbarMenuItem,
+  NavbarMenu,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
+import Firma from "../../assets/img/sm.png";
+export default function CustomNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const handleDownload = () => {
+    // URL relativa al archivo CV en la carpeta public
+    const cvUrl = "/cv2024.pdf";
+  
+    // Crear un elemento <a> temporal para iniciar la descarga
+    const downloadLink = document.createElement("a");
+    downloadLink.href = cvUrl;
+    downloadLink.download = "CV.pdf"; // Nombre que se utilizará para guardar el archivo
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+  
+  return (
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className="bg-black"
+    >
+      {/* Toggle button for small screens aligned to the left */}
+      <NavbarContent className="sm:hidden" justify="start">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
+      </NavbarContent>
+
+      {/* Brand in the right for small screens */}
+      <NavbarContent className="sm:hidden" justify="end">
+        <NavbarBrand>
+          <img className="w-40 mr-10" src={Firma} alt="" />
+          <p className="font-bold text-inherit"> </p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      {/* Navbar brand for large screens */}
+      <NavbarContent className="hidden sm:flex" justify="start">
+        <NavbarBrand>
+          <img className="w-40 mr-10" src={Firma} alt="" />
+          <p className="font-bold text-inherit"></p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      {/* Navbar items for large screens aligned to the right */}
+      <NavbarContent className="hidden text-white sm:flex gap-4" justify="end">
+        <NavbarItem>
+          <Link className="text-white lg:mr-4" color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white" color="foreground" href="/sobre-mi">
+            Sobre Mi
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button className="text-base" variant="">
+                Estudios
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Estudios">
+              <DropdownItem
+                className="text-black"
+                key="Egg"
+                color="secondary"
+                href="/estudios/egg-cooperation"
+              >
+                Egg Cooperation
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="CodoAcodo"
+                color="secondary"
+                href="/estudios/codo-a-codo"
+              >
+                Codo a Codo
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Google"
+                color="secondary"
+                href="/estudios/google"
+              >
+                Google
+              </DropdownItem>
+
+              <DropdownItem
+                className="text-black"
+                key="OracleLatam"
+                color="secondary"
+                href="/estudios/oracle-latam"
+              >
+                Oracle Latam
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="CodigoFacilito"
+                color="secondary"
+                href="/estudios/codigo-facilito"
+              >
+                Codigo Facilito
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="DonWeb"
+                color="secondary"
+                href="/estudios/donweb"
+              >
+                DonWeb
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="TodoCode"
+                color="secondary"
+                href="/estudios/todo-code"
+              >
+                Todo Code
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Telefonica"
+                color="secondary"
+                href="/estudios/telefonica"
+              >
+                Telefónica
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Skills"
+                color="secondary"
+                href="/estudios/skills"
+              >
+                Skills
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarItem>
+        <NavbarItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button className="text-base" variant=" ">
+                Proyectos
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Proyectos">
+              <DropdownItem
+                className="text-black"
+                color="secondary"
+                key="MolachinoViajes"
+                href="/proyectos/molachino-viajes"
+              >
+                Molachino Viajes
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                color="secondary"
+                key="GestionLem"
+                href="/proyectos/gestion-lem"
+              >
+                Gestion Hotelera Lem
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                color="secondary"
+                key="SistemaContable"
+                href="/proyectos/sistema-contable"
+              >
+                Sistema Contable
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                color="secondary"
+                key="ControlParentalEstudiantes"
+                href="/proyectos/control-parental"
+              >
+                Control Parental Estudiantes
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white" color="foreground" href="/contacto">
+            Contacto
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            onClick={handleDownload}
+            color="primary"
+            href="#"
+            variant="flat"
+          >
+            Descargar CV
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+
+      {/* Collapsible menu content for small screens */}
+      <NavbarMenu>
+        <NavbarMenuItem>
+          <Link className="w-full text-base text-black" href="/" size="lg">
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-base text-black"
+            href="/sobre-mi"
+            size="lg"
+          >
+            Sobre Mi
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button variant="" className="text-base text-black">
+                Estudios
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Estudios">
+              <DropdownItem
+                className="text-black"
+                key="Egg"
+                href="/estudios/egg-cooperation"
+                color="secondary"
+              >
+                Egg Cooperation
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="CodoAcodo"
+                href="/estudios/codo-a-codo"
+                color="secondary"
+              >
+                Codo a Codo
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Google"
+                href="/estudios/google"
+                color="secondary"
+              >
+                Google
+              </DropdownItem>
+
+              <DropdownItem
+                className="text-black"
+                key="OracleLatam"
+                href="/estudios/oracle-latam"
+                color="secondary"
+              >
+                Oracle Latam
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="CodigoFacilito"
+                href="/estudios/codigo-facilito"
+                color="secondary"
+              >
+                Codigo Facilito
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="DonWeb"
+                href="/estudios/donweb"
+                color="secondary"
+              >
+                DonWeb
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="TodoCode"
+                href="/estudios/todo-code"
+                color="secondary"
+              >
+                Todo Code
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Telefonica"
+                href="/estudios/telefonica"
+                color="secondary"
+              >
+                Telefónica
+              </DropdownItem>
+              <DropdownItem
+                className="text-black"
+                key="Skills"
+                color="secondary"
+                href="/estudios/skills"
+              >
+                Skills
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button variant="" className="text-base text-black">
+                Proyectos
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Proyectos">
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="MolachinoViajes"
+                href="/proyectos/molachino-viajes"
+              >
+                Molachino Viajes
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="GestionLem"
+                href="/proyectos/gestion-lem"
+              >
+                Gestion Hotelera Lem
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="SistemaContable"
+                href="/proyectos/sistema-contable"
+              >
+                Sistema Contable
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="ControlParentalEstudiantes"
+                href="/proyectos/control-parental"
+              >
+                Control Parental Estudiantes
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-base text-black"
+            href="/contacto"
+            size="lg"
+          >
+            Contacto
+          </Link>
+        </NavbarMenuItem>
+      </NavbarMenu>
+    </Navbar>
+  );
+}
