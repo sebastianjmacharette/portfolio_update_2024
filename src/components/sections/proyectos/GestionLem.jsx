@@ -27,7 +27,7 @@ function GestionLem() {
             <p className="text-base animate-pulseCustom tracking-widest text-white/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="text-tiny text-white bg-purple-500/40"
+              className="text-tiny text-white  bg-teal-500/40"
               variant="flat"
               color="default"
               radius="lg"
