@@ -16,7 +16,7 @@ function Molachino() {
           </div>
         </h2>
         <div className="divider divider-secondary mt-10">Figma</div>
-
+        <div className="lg:px-10 xl:px-20 2xl:px-20 lg:mt-14">
         <Card isFooterBlurred radius="lg" className="border-none">
           <Image
             alt="Woman listing to music"
@@ -41,6 +41,7 @@ function Molachino() {
             </Button>
           </CardFooter>
         </Card>
+        </div>
         <a
           className="text-white"
           target="_blanck"
@@ -96,6 +97,16 @@ function Molachino() {
             className="w-full   h-96   px-4"
             src="https://www.youtube.com/embed/zd66YwNzqIU?si=Sf6CUMFdVOj9a4hA"
             title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div className="flex justify-center sm:mb-10 items-center">
+          <iframe
+            className="w-full   h-96   px-4"
+            src="https://www.youtube.com/embed/ChM6o8uTo7M?si=cbHpZSU8FSAM7ZFr"             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"

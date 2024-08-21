@@ -14,7 +14,7 @@ function GestionLem() {
 
         </h2>
         <div className="divider divider-secondary mt-10">Figma</div>
-
+<div className="lg:px-10 xl:px-20 2xl:px-20 lg:mt-14">
         <Card isFooterBlurred radius="lg" className="border-none">
           <Image
             alt="Woman listing to music"
@@ -24,10 +24,10 @@ function GestionLem() {
             width="100%" // Asegura que la imagen ocupe todo el ancho
           />
           <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <p className="text-base animate-pulseCustom tracking-widest text-white/100">
+            <p className="text-base animate-pulseCustom tracking-widest text-black/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="text-tiny text-white  bg-teal-500/40"
+              className="text-black font-bold  bg-white/40"
               variant="flat"
               color="default"
               radius="lg"
@@ -38,6 +38,7 @@ function GestionLem() {
             </Button>
           </CardFooter>
         </Card>
+        </div>
       </div>
       <div className="flex-1 px-2 sm:w-1/3">
         <p className="text-center text-sm mt-4 ">

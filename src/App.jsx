@@ -17,6 +17,9 @@ import Skills from './components/sections/estudios/Skills';
 import SistemaContable from './components/sections/proyectos/SistemaContable';
 import GestionLem from './components/sections/proyectos/GestionLem';
 import Molachino from './components/sections/proyectos/Molachino';
+import SistemaMedico from './components/sections/proyectos/SistemaMedico';
+import AtuServicio from './components/sections/proyectos/AtuServicio';
+import Meteorologico from './components/sections/proyectos/Meteorologico';
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -39,6 +42,10 @@ function App() {
             <Route path="/proyectos/sistema-contable" element={<SistemaContable />} />
             <Route path="/proyectos/gestion-lem" element={<GestionLem />} />
             <Route path="/proyectos/molachino-viajes" element={<Molachino />} />
+            <Route path="/proyectos/sistema-medico" element={<SistemaMedico />} />
+            <Route path="/proyectos/a-tu-servicio" element={<AtuServicio />} />
+            <Route path="/proyectos/meteo" element={<Meteorologico />} />
+
 
 
 

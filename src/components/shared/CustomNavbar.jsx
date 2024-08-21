@@ -20,7 +20,7 @@ export default function CustomNavbar() {
   const handleDownload = () => {
     // URL relativa al archivo CV en la carpeta public
     const cvUrl = "/cv2024.pdf";
-  
+
     // Crear un elemento <a> temporal para iniciar la descarga
     const downloadLink = document.createElement("a");
     downloadLink.href = cvUrl;
@@ -29,7 +29,7 @@ export default function CustomNavbar() {
     downloadLink.click();
     document.body.removeChild(downloadLink);
   };
-  
+
   return (
     <Navbar
       isBordered
@@ -191,10 +191,26 @@ export default function CustomNavbar() {
               <DropdownItem
                 className="text-black"
                 color="secondary"
-                key="ControlParentalEstudiantes"
-                href="/proyectos/control-parental"
+                key="SistemaMedico"
+                href="/proyectos/sistema-medico"
               >
-                Control Parental Estudiantes
+                Sistema Medico{" "}
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="AtuServicio"
+                href="/proyectos/a-tu-servicio"
+              >
+                A tu Servicio{" "}
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Meteo"
+                href="/proyectos/meteo"
+              >
+               Meteorológico 
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -351,10 +367,26 @@ export default function CustomNavbar() {
               <DropdownItem
                 color="secondary"
                 className="text-black"
-                key="ControlParentalEstudiantes"
-                href="/proyectos/control-parental"
+                key="SistemaMedico"
+                href="/proyectos/sistema-medico"
               >
-                Control Parental Estudiantes
+                Sistema Medico{" "}
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="AtuServicio"
+                href="/proyectos/a-tu-servicio"
+              >
+                A tu Servicio 
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Meteo"
+                href="/proyectos/meteo"
+              >
+               Meteorológico 
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -368,6 +400,17 @@ export default function CustomNavbar() {
             Contacto
           </Link>
         </NavbarMenuItem>
+      
+          <Button
+         
+            onClick={handleDownload}
+            color="secondary"
+            href="#"
+            variant="flat"
+          >
+            Descargar CV
+          </Button>
+         
       </NavbarMenu>
     </Navbar>
   );

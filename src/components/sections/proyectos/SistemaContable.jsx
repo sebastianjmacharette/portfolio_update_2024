@@ -14,6 +14,8 @@ function SistemaContable() {
 
         </h2>
         <div className="divider divider-secondary">Figma</div>
+        <div className="lg:px-10 xl:px-20 2xl:px-20 lg:mt-14">
+  
 
         <Card isFooterBlurred radius="lg" className="border-none">
           <Image
@@ -27,7 +29,7 @@ function SistemaContable() {
             <p className="text-base animate-pulseCustom tracking-widest text-white/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="text-tiny text-white bg-purple-500/40"
+              className="  text-black font-bold bg-white/60"
               variant="flat"
               color="default"
               radius="lg"
@@ -38,6 +40,7 @@ function SistemaContable() {
             </Button>
           </CardFooter>
         </Card>
+        </div>
       </div>
       <div className="flex-1 px-2 sm:w-1/3">
         <p className="text-center text-sm mt-4 ">
