@@ -30,8 +30,8 @@ function AtuServicio() {
                 Mira aquí la documentación.{" "}
               </p>
               <Button
-                className="  text-black font-bold bg-white/60"
-                variant="flat"
+              className="text-tiny text-white  bg-pink-700 "
+              variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
@@ -53,7 +53,7 @@ function AtuServicio() {
           adecuados para sus necesidades.
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">
+          <span className="text-white bg-secondary sm:text-center lg:text-left underline">
             Características Clave
           </span>
           <ul className="list-disc pl-5  text-white">
@@ -87,9 +87,9 @@ function AtuServicio() {
             className="w-full   h-96   px-4"
             src="https://www.youtube.com/embed/rOX6NIsb-p4?si=VFeLoiT5GoE3o2tj" 
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>

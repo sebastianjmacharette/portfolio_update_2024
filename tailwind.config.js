@@ -11,11 +11,18 @@ export default {
     extend: {
       animation: {
         pulseCustom: 'pulseCustom 2s infinite',
+        colorCycle: 'colorCycle 4s ease-in-out infinite', // Añadido
       },
       keyframes: {
         pulseCustom: {
           '0%, 100%': { opacity: 1, transform: 'scale(1)' },
           '50%': { opacity: 0.5, transform: 'scale(1.05)' },
+        },
+        colorCycle: { // Añadido
+          '0%, 100%': { color: '#FF0000' },  // Rojo
+          '25%': { color: '#00FF00' },       // Verde
+          '50%': { color: '#0000FF' },       // Azul
+          '75%': { color: '#FFFF00' },       // Amarillo
         },
       },
     },

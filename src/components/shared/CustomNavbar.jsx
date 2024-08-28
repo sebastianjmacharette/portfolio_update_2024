@@ -212,9 +212,40 @@ export default function CustomNavbar() {
               >
                Meteorológico 
               </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Diseno"
+                href="/proyectos/desing"
+              >
+               Diseño UX/UI 
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Wordpres"
+                href="/proyectos/wordpress"
+              >
+               Trabajos Wordpress 
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Wix"
+                href="/proyectos/wix"
+              >
+               Trabajos Wix
+              </DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
+        <NavbarItem>
+          <Link className="text-white" color="foreground" href="/clientes">
+           Clientes
+          </Link>
+        </NavbarItem>
+        
+        
         <NavbarItem>
           <Link className="text-white" color="foreground" href="/contacto">
             Contacto
@@ -388,8 +419,41 @@ export default function CustomNavbar() {
               >
                Meteorológico 
               </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Diseno"
+                href="/proyectos/desing"
+              >
+               Diseño UX/UI 
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Wordpres"
+                href="/proyectos/wordpress"
+              >
+               Trabajos Wordpress 
+              </DropdownItem>
+              <DropdownItem
+                color="secondary"
+                className="text-black"
+                key="Wix"
+                href="/proyectos/wix"
+              >
+               Trabajos Wix
+              </DropdownItem>
             </DropdownMenu>
           </Dropdown>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-base text-black"
+            href="/clientes"
+            size="lg"
+          >
+            Clientes
+          </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link

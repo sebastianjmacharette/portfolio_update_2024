@@ -20,6 +20,11 @@ import Molachino from './components/sections/proyectos/Molachino';
 import SistemaMedico from './components/sections/proyectos/SistemaMedico';
 import AtuServicio from './components/sections/proyectos/AtuServicio';
 import Meteorologico from './components/sections/proyectos/Meteorologico';
+import TimeTamer from './components/sections/proyectos/desing/TimeTamer';
+import Desing from './components/sections/proyectos/Desing';
+import Wix from './components/sections/proyectos/Wix';
+import WordPress from './components/sections/proyectos/WordPress';
+import Clientes from './components/sections/Clientes';
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
@@ -45,6 +50,12 @@ function App() {
             <Route path="/proyectos/sistema-medico" element={<SistemaMedico />} />
             <Route path="/proyectos/a-tu-servicio" element={<AtuServicio />} />
             <Route path="/proyectos/meteo" element={<Meteorologico />} />
+            <Route path="/proyectos/desing" element={<Desing/>} />
+            <Route path="/proyectos/desing/time-tamer" element={<TimeTamer/>} />
+             <Route path="/proyectos/wordpress" element={<WordPress/>} />
+             <Route path="/proyectos/wix" element={<Wix/>} />
+             <Route path="/clientes" element={<Clientes/>} />
+
 
 
 

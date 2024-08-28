@@ -11,7 +11,7 @@ function Meteorologico() {
       <div className="flex-1 sm:w-1/3 lg:px-4 lg:mt-14 md:mt-14">
         <h2 className="text-white text-2xl lg:mb-10 sm:mb-4  text-center italic">
           <div className="divider lg:mb-20 sm:mb-4 divider-start">
-          Proyecto Meteorológico
+            Proyecto Meteorológico
           </div>
         </h2>
         <div className="divider divider-secondary">Figma</div>
@@ -29,8 +29,8 @@ function Meteorologico() {
                 Mira aquí la documentación.{" "}
               </p>
               <Button
-                className="  text-black font-bold bg-white/60"
-                variant="flat"
+              className="text-tiny text-white  bg-pink-700 "
+              variant="flat"
                 color="default"
                 radius="lg"
                 size="sm"
@@ -44,36 +44,27 @@ function Meteorologico() {
       </div>
       <div className="flex-1 px-2 sm:w-1/3">
         <p className="text-center text-sm mt-4 ">
-         Plataforma diseñada para
-          revolucionar la forma en que encontramos y contratamos servicios
-          domésticos. Imagina un lugar donde carpinteros, plomeros y otros
-          profesionales puedan ofrecer sus servicios directamente a clientes, y
-          donde los clientes puedan encontrar fácilmente a los profesionales
-          adecuados para sus necesidades.
+          Proyecto, desarrollado en React
+          para mostrar el clima en tiempo real y la ubicación del usuario en un
+          mapa interactivo. La aplicación se adapta a cualquier dispositivo
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">
+          <span className="text-white bg-secondary sm:text-center lg:text-left underline">
             Características Clave
           </span>
           <ul className="list-disc pl-5  text-white">
+            <li>Ubicación del usuario: La aplicación obtiene la ubicación del usuario mediante las coordenadas del navegador</li>
             <li>
-            Registro sencillo y rápido para profesionales y clientes.
+            Clima en tiempo real: Se muestran las condiciones climáticas actuales para la ubicación del usuario, incluyendo temperatura, humedad, presión atmosférica y viento.
             </li>
+            <li>Pronóstico del tiempo: Se muestra un pronóstico del tiempo para los próximos días.</li>
+            <li>Mapa interactivo: Se muestra un mapa con la ubicación del usuario marcada. El mapa es totalmente responsive y permite controlar el zoom.</li>
+            <li>Diseño atractivo: La aplicación tiene un diseño atractivo y fácil de usar.</li>
             <li>
-            Búsqueda avanzada por categoría, ubicación y calificaciones.
+            Este proyecto es un ejemplo de cómo se puede utilizar React para crear aplicaciones web interactivas y útiles. La aplicación es fácil de usar y tiene un gran potencial para ser ampliada y mejorada.
             </li>
-            <li>
-            Sistema de mensajería integrado para comunicación directa.
-            </li>
-            <li>Gestión transparente de presupuestos y cobros.</li>
-            <li>Seguridad garantizada con Spring Security y JWT.</li>
-            <li>Base de datos: MySQL para almacenar la información de forma segura y escalable.</li>
-            <li>Profesionales: Amplía tu cartera de clientes y aumenta tus ingresos.</li>
-                <li>Clientes: Encuentra los mejores profesionales para tus proyectos.
-                </li>
-            
+             
           </ul>
-          
         </p>
         <div className="divider  divider-secondary">Descripcíon</div>
       </div>
@@ -84,10 +75,11 @@ function Meteorologico() {
         <div className="flex justify-center sm:mb-10 items-center">
           <iframe
             className="w-full   h-96   px-4"
-            src="https://www.youtube.com/embed/j5lJeh8xp9w?si=zniTdDquz-J7bmI7"             title="YouTube video player"
-            frameborder="0"
+            src="https://www.youtube.com/embed/j5lJeh8xp9w?si=zniTdDquz-J7bmI7"
+            title="YouTube video player"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>

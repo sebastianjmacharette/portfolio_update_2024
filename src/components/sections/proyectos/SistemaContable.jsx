@@ -10,7 +10,7 @@ function SistemaContable() {
     <div className="flex flex-col sm:flex-row  ">
       <div className="flex-1 sm:w-1/3 lg:px-4 lg:mt-14 md:mt-14">
         <h2 className="text-white text-2xl lg:mb-10 sm:mb-4  text-center italic">
-        <div className="divider lg:mb-20 sm:mb-4 divider-start">  Sistema Contable</div>
+        <div className="divider lg:mb-20 sm:mb-4 divider-secondary divider-start">  Sistema Contable</div>
 
         </h2>
         <div className="divider divider-secondary">Figma</div>
@@ -29,7 +29,7 @@ function SistemaContable() {
             <p className="text-base animate-pulseCustom tracking-widest text-white/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="  text-black font-bold bg-white/60"
+              className="text-tiny text-white  bg-pink-700 "
               variant="flat"
               color="default"
               radius="lg"
@@ -53,7 +53,7 @@ function SistemaContable() {
           las transacciones.
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">Características Clave</span>
+          <span className="text-white sm:text-center bg-secondary lg:text-left underline">Características Clave</span>
           <ul className="list-disc pl-5  text-white">
             <li>
               Registro de Ingresos y Gastos: Clasificación de transacciones y
@@ -67,7 +67,7 @@ function SistemaContable() {
               Generación de Recibos Provisorios: Creación de recibos temporales.
             </li>
           </ul>
-          <span className="text-white underline">Tecnologías Utilizadas</span>
+          <span className="text-white bg-secondary underline">Tecnologías Utilizadas</span>
           <ul className="list-disc pl-5 text-white">
             <li>
               Frontend: React, Vite, Tailwind CSS, Material UI, Redux Toolkit
@@ -86,9 +86,9 @@ function SistemaContable() {
     className="w-full   h-96   px-4"
     src="https://www.youtube.com/embed/RDliW_mDhkQ?si=XCaHp9AfKUHX5-nt"
     title="YouTube video player"
-    frameborder="0"
+    frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
+    referrerPolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
 </div>

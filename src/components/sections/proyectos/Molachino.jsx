@@ -10,7 +10,7 @@ function Molachino() {
     <div className="flex flex-col sm:flex-row  ">
       <div className="flex-1 sm:w-1/3 lg:px-4 lg:mt-14 md:mt-14">
         <h2 className="text-white text-2xl lg:mb-10 sm:mb-4 mt-10 text-center italic">
-          <div className="divider lg:mb-20 sm:mb-10 divider-start">
+          <div className="divider lg:mb-20 sm:mb-10 divider-secondary divider-start">
             {" "}
             Molachino Viajes y Turismo
           </div>
@@ -30,7 +30,7 @@ function Molachino() {
               Mira aquí la documentación.{" "}
             </p>
             <Button
-              className="text-tiny text-white  bg-teal-500/40"
+              className="text-tiny text-white  bg-pink-700 "
               variant="flat"
               color="default"
               radius="lg"
@@ -48,7 +48,7 @@ function Molachino() {
           href="https://molachinoviajes.com/index"
         >
           {" "}
-          <div className="divider divider-end lg:mt-10 ">Link Página</div>
+          <div className="divider divider-secondary divider-end lg:mt-10 ">Link Página</div>
         </a>
       </div>
       <div className="flex-1 px-2 sm:w-1/3">
@@ -68,7 +68,7 @@ function Molachino() {
           y bien gestionada.
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">
+          <span className="text-white sm:text-center bg-secondary lg:text-left underline">
             Características Clave
           </span>
           <ul className="list-disc pl-5  text-white">
@@ -97,9 +97,9 @@ function Molachino() {
             className="w-full   h-96   px-4"
             src="https://www.youtube.com/embed/zd66YwNzqIU?si=Sf6CUMFdVOj9a4hA"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>
@@ -107,9 +107,9 @@ function Molachino() {
           <iframe
             className="w-full   h-96   px-4"
             src="https://www.youtube.com/embed/ChM6o8uTo7M?si=cbHpZSU8FSAM7ZFr"             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
         </div>

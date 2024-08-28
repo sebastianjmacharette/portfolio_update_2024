@@ -10,9 +10,9 @@ function SistemaMedico() {
     <div className="flex flex-col sm:flex-row  ">
       <div className="flex-1 sm:w-1/3 lg:px-4 lg:mt-14 md:mt-14">
         <h2 className="text-white text-2xl lg:mb-10 sm:mb-4  text-center italic">
-        <div className="divider  divider-start">  Sistema Medico</div>
-        <div className="divider divider-end ">Version AutoInstalable</div>
-        <div className="divider  divider-start lg:mb-20 sm:mb-4">Sistema Operativo: Windows</div>
+        <div className="divider divider-secondary  divider-start">  Sistema Medico</div>
+        <div className="divider divider-secondary divider-end ">Version AutoInstalable</div>
+        <div className="divider divider-secondary  divider-start lg:mb-20 sm:mb-4">Sistema Operativo: Windows</div>
 
 
         </h2>
@@ -32,7 +32,7 @@ function SistemaMedico() {
             <p className="text-base animate-pulseCustom tracking-widest text-white/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="text-tiny text-white bg-purple-500/40"
+              className="text-tiny text-white  bg-pink-700 "
               variant="flat"
               color="default"
               radius="lg"
@@ -52,7 +52,7 @@ function SistemaMedico() {
 Compilado como un archivo ejecutable (.exe) y convertido en un autoejecutable, el sistema elimina la necesidad de configuraciones técnicas complejas, permitiendo a los médicos concentrarse en lo que realmente importa: la atención al paciente. Con funcionalidades como el registro de pacientes y el acceso al historial médico organizado cronológicamente, el Sistema Médico ofrece una forma eficiente y confiable de gestionar la información clínica, optimizando la práctica médica diaria.
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">Características Clave</span>
+          <span className="text-white sm:text-center bg-secondary lg:text-left underline">Características Clave</span>
           <ul className="list-disc pl-5  text-white">
             <li>
             La conversión a archivo autoejecutable permite una instalación ágil, permitiendo a los médicos acceder rápidamente al sistema sin la necesidad de configuraciones técnicas avanzadas.
@@ -76,9 +76,9 @@ Compilado como un archivo ejecutable (.exe) y convertido en un autoejecutable, e
   <iframe
     className="w-full   h-96   px-4"
     src="https://www.youtube.com/embed/Y1KhVB1JanU?si=mt7T64eQCwCLQkrT"     title="YouTube video player"
-    frameborder="0"
+    frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
+    referrerPolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
 </div>

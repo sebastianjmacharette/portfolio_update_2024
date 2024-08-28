@@ -10,7 +10,8 @@ function GestionLem() {
     <div className="flex flex-col sm:flex-row  ">
       <div className="flex-1 sm:w-1/3 lg:px-4 lg:mt-14 md:mt-14">
         <h2 className="text-white text-2xl lg:mb-10 sm:mb-4 mt-10 text-center italic">
-        <div className="divider lg:mb-20 sm:mb-10 divider-start">  Sistema para el Manejo <br /> de Reservas de Hoteles</div>
+        <div className="divider   divider-secondary divider-start">  Sistema para el Manejo </div>
+        <div className="divider lg:mb-20 sm:mb-10 divider-secondary divider-end">  de Reservas de Hoteles</div>
 
         </h2>
         <div className="divider divider-secondary mt-10">Figma</div>
@@ -27,7 +28,7 @@ function GestionLem() {
             <p className="text-base animate-pulseCustom tracking-widest text-black/100">
             Mira aquí la documentación.            </p>
             <Button
-              className="text-black font-bold  bg-white/40"
+              className="text-tiny text-white  bg-pink-700 "
               variant="flat"
               color="default"
               radius="lg"
@@ -47,7 +48,7 @@ function GestionLem() {
 Con un enfoque en la eficiencia y la precisión, el sistema está equipado para manejar todas las transacciones financieras relacionadas con las reservas, desde la generación automática de facturas hasta la integración con sistemas de pago. Además, proporciona herramientas avanzadas para la elaboración de reportes financieros, permitiendo a los gerentes obtener una visión clara del estado financiero del hotel en cualquier momento.
         </p>
         <p>
-          <span className="text-white sm:text-center lg:text-left underline">Características Clave</span>
+          <span className="text-white sm:text-center bg-secondary lg:text-left underline">Características Clave</span>
           <ul className="list-disc pl-5  text-white">
             <li>
             Aplicación web responsive diseñada para optimizar la gestión operativa y administrativa de hoteles.
@@ -59,7 +60,7 @@ Con un enfoque en la eficiencia y la precisión, el sistema está equipado para 
             Backend: Java Spring Boot, montado en contenedores Docker y desplegado en dos servidores.
             </li>
           </ul>
-          <span className="text-white underline">Funcionalidades Principales</span>
+          <span className="text-white bg-secondary underline">Funcionalidades Principales</span>
           <ul className="list-disc pl-5 text-white">
             <li>
             Gestión de Reservas: Validación de habitaciones y fechas para evitar duplicados.
@@ -77,9 +78,9 @@ Con un enfoque en la eficiencia y la precisión, el sistema está equipado para 
     className="w-full   h-96   px-4"
     src="https://www.youtube.com/embed/Mm30gMp39TM?si=dyCRwdMFVng9REy_" 
     title="YouTube video player"
-    frameborder="0"
+    frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
+    referrerPolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
 </div>

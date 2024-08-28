@@ -31,15 +31,16 @@ function Home() {
 
           <div className="lg:ml-10 mt-6 lg:mt-0 flex   flex-col lg:items-end w-full">
             <h1 className="text-5xl font-bold sm:text-center text-white lg:text-end">Portfolio Digital</h1>
-            <h2 className="text-2xl font-bold  text-white ">Programador Full Stack</h2>
-            <h2 className="text-2xl font-bold  text-white ">Especializado en Frontend</h2>
-            <h2 className="text-2xl font-bold  text-white ">Diseñador UX/UI</h2>
+            <h2 className="text-2xl font-bold   text-white ">Programador Full Stack</h2>
+            <h2 className="text-2xl font-bold   text-white ">Especializado en Frontend</h2>
+            <h2 className="text-2xl font-bold   text-white ">Diseñador UX/UI</h2>
 
             <p className="p-10 font-semibold text-xl hidden lg:block text-white text-end">
-              "Portfolio Digital de Sebastián Macharette. Gracias por conocer más sobre mí, mis estudios y proyectos."
+              "Portfolio Digital de <span className='bg-secondary'>Sebastián Macharette</span> . Gracias por conocer más
+               sobre mí, mis <span className='bg-secondary'>estudios y proyectos</span>."
             </p>
             <div className="mt-4 flex w-full justify-end sm:mb-40">
-              <button onClick={handleClick} className="btn btn-outline">Conóceme!</button>
+              <button onClick={handleClick} className="btn btn-outline text-white">Conóceme!</button>
             </div>
           </div>
         </div>
