@@ -81,7 +81,7 @@ export default function CustomNavbar() {
             </DropdownTrigger>
             <DropdownMenu aria-label="Estudios">
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Egg"
                 color="secondary"
                 href="/estudios/egg-cooperation"
@@ -89,7 +89,7 @@ export default function CustomNavbar() {
                 Egg Cooperation
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="CodoAcodo"
                 color="secondary"
                 href="/estudios/codo-a-codo"
@@ -97,7 +97,7 @@ export default function CustomNavbar() {
                 Codo a Codo
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Google"
                 color="secondary"
                 href="/estudios/google"
@@ -106,7 +106,7 @@ export default function CustomNavbar() {
               </DropdownItem>
 
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="OracleLatam"
                 color="secondary"
                 href="/estudios/oracle-latam"
@@ -114,7 +114,7 @@ export default function CustomNavbar() {
                 Oracle Latam
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="CodigoFacilito"
                 color="secondary"
                 href="/estudios/codigo-facilito"
@@ -122,7 +122,7 @@ export default function CustomNavbar() {
                 Codigo Facilito
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="DonWeb"
                 color="secondary"
                 href="/estudios/donweb"
@@ -130,7 +130,7 @@ export default function CustomNavbar() {
                 DonWeb
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="TodoCode"
                 color="secondary"
                 href="/estudios/todo-code"
@@ -138,7 +138,7 @@ export default function CustomNavbar() {
                 Todo Code
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Telefonica"
                 color="secondary"
                 href="/estudios/telefonica"
@@ -146,7 +146,7 @@ export default function CustomNavbar() {
                 Telefónica
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Skills"
                 color="secondary"
                 href="/estudios/skills"
@@ -165,7 +165,7 @@ export default function CustomNavbar() {
             </DropdownTrigger>
             <DropdownMenu aria-label="Proyectos">
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 color="secondary"
                 key="MolachinoViajes"
                 href="/proyectos/molachino-viajes"
@@ -173,7 +173,7 @@ export default function CustomNavbar() {
                 Molachino Viajes
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 color="secondary"
                 key="GestionLem"
                 href="/proyectos/gestion-lem"
@@ -181,7 +181,7 @@ export default function CustomNavbar() {
                 Gestion Hotelera Lem
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 color="secondary"
                 key="SistemaContable"
                 href="/proyectos/sistema-contable"
@@ -189,7 +189,7 @@ export default function CustomNavbar() {
                 Sistema Contable
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 color="secondary"
                 key="SistemaMedico"
                 href="/proyectos/sistema-medico"
@@ -198,7 +198,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="AtuServicio"
                 href="/proyectos/a-tu-servicio"
               >
@@ -206,7 +206,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Meteo"
                 href="/proyectos/meteo"
               >
@@ -214,7 +214,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Diseno"
                 href="/proyectos/desing"
               >
@@ -222,7 +222,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Wordpres"
                 href="/proyectos/wordpress"
               >
@@ -230,7 +230,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Wix"
                 href="/proyectos/wix"
               >
@@ -254,7 +254,7 @@ export default function CustomNavbar() {
         <NavbarItem>
           <Button
             onClick={handleDownload}
-            color="primary"
+            color="danger"
             href="#"
             variant="flat"
           >
@@ -266,13 +266,13 @@ export default function CustomNavbar() {
       {/* Collapsible menu content for small screens */}
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link className="w-full font-bold text-black" href="/" size="lg">
+          <Link className="w-full font-bold text-white" href="/" size="lg">
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full font-bold text-black"
+            className="w-full font-bold text-white"
             href="/sobre-mi"
             size="lg"
           >
@@ -282,13 +282,13 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button variant="" className=" text-xl font-bold text-black">
+              <Button variant="" className=" text-xl font-bold text-white">
                 Estudios
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Estudios">
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Egg"
                 href="/estudios/egg-cooperation"
                 color="secondary"
@@ -296,7 +296,7 @@ export default function CustomNavbar() {
                 Egg Cooperation
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="CodoAcodo"
                 href="/estudios/codo-a-codo"
                 color="secondary"
@@ -304,7 +304,7 @@ export default function CustomNavbar() {
                 Codo a Codo
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Google"
                 href="/estudios/google"
                 color="secondary"
@@ -313,7 +313,7 @@ export default function CustomNavbar() {
               </DropdownItem>
 
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="OracleLatam"
                 href="/estudios/oracle-latam"
                 color="secondary"
@@ -321,7 +321,7 @@ export default function CustomNavbar() {
                 Oracle Latam
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="CodigoFacilito"
                 href="/estudios/codigo-facilito"
                 color="secondary"
@@ -329,7 +329,7 @@ export default function CustomNavbar() {
                 Codigo Facilito
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="DonWeb"
                 href="/estudios/donweb"
                 color="secondary"
@@ -337,7 +337,7 @@ export default function CustomNavbar() {
                 DonWeb
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="TodoCode"
                 href="/estudios/todo-code"
                 color="secondary"
@@ -345,7 +345,7 @@ export default function CustomNavbar() {
                 Todo Code
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Telefonica"
                 href="/estudios/telefonica"
                 color="secondary"
@@ -353,7 +353,7 @@ export default function CustomNavbar() {
                 Telefónica
               </DropdownItem>
               <DropdownItem
-                className="text-black"
+                className="text-white"
                 key="Skills"
                 color="secondary"
                 href="/estudios/skills"
@@ -366,14 +366,14 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button variant="" className=" text-xl font-bold text-black">
+              <Button variant="" className=" text-xl font-bold text-white">
                 Proyectos
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Proyectos">
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="MolachinoViajes"
                 href="/proyectos/molachino-viajes"
               >
@@ -381,7 +381,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="GestionLem"
                 href="/proyectos/gestion-lem"
               >
@@ -389,7 +389,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="SistemaContable"
                 href="/proyectos/sistema-contable"
               >
@@ -397,7 +397,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="SistemaMedico"
                 href="/proyectos/sistema-medico"
               >
@@ -405,7 +405,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="AtuServicio"
                 href="/proyectos/a-tu-servicio"
               >
@@ -413,7 +413,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Meteo"
                 href="/proyectos/meteo"
               >
@@ -421,7 +421,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Diseno"
                 href="/proyectos/desing"
               >
@@ -429,7 +429,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Wordpres"
                 href="/proyectos/wordpress"
               >
@@ -437,7 +437,7 @@ export default function CustomNavbar() {
               </DropdownItem>
               <DropdownItem
                 color="secondary"
-                className="text-black"
+                className="text-white"
                 key="Wix"
                 href="/proyectos/wix"
               >
@@ -448,7 +448,7 @@ export default function CustomNavbar() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full font-bold text-black"
+            className="w-full font-bold text-white"
             href="/clientes"
             size="lg"
           >
@@ -457,7 +457,7 @@ export default function CustomNavbar() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full font-bold text-black"
+            className="w-full font-bold text-white"
             href="/contacto"
             size="lg"
           >
@@ -468,7 +468,7 @@ export default function CustomNavbar() {
         <Button
          
             onClick={handleDownload}
-            color="secondary"
+            color="danger"
             href="#"
             variant="flat"
           >

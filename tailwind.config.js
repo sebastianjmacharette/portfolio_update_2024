@@ -27,9 +27,12 @@ export default {
       },
     },
   },
-  darkMode: "class",
+  darkMode: "class", // Modo oscuro activado por clase
   plugins: [
-    nextui(),
-    require('daisyui'),
+    nextui(),  // Plugin para NextUI
+    require('daisyui'),  // Plugin para daisyUI
   ],
+  daisyui: {
+    themes: ['dark'], // Configuración para aplicar el tema oscuro de daisyUI
+  },
 }
