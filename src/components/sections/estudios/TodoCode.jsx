@@ -35,8 +35,8 @@ function TodoCode() {
             <div className="card-body">
               <h2 className="  text-white text-2xl text-center">Todo Code {index + 1}</h2>
                <div className="card-actions justify-end">
-                <button className="btn btn-primary" onClick={() => openModal(image)}>
-                  Ver Imagen
+                <button className="btn bg-pink-700" onClick={() => openModal(image)}>
+                  Ver Certificado
                 </button>
               </div>
             </div>

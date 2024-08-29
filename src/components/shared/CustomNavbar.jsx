@@ -266,13 +266,13 @@ export default function CustomNavbar() {
       {/* Collapsible menu content for small screens */}
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link className="w-full text-base text-black" href="/" size="lg">
+          <Link className="w-full font-bold text-black" href="/" size="lg">
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full text-base text-black"
+            className="w-full font-bold text-black"
             href="/sobre-mi"
             size="lg"
           >
@@ -282,7 +282,7 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button variant="" className="text-base text-black">
+              <Button variant="" className=" text-xl font-bold text-black">
                 Estudios
               </Button>
             </DropdownTrigger>
@@ -366,7 +366,7 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button variant="" className="text-base text-black">
+              <Button variant="" className=" text-xl font-bold text-black">
                 Proyectos
               </Button>
             </DropdownTrigger>
@@ -448,7 +448,7 @@ export default function CustomNavbar() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full text-base text-black"
+            className="w-full font-bold text-black"
             href="/clientes"
             size="lg"
           >
@@ -457,15 +457,15 @@ export default function CustomNavbar() {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
-            className="w-full text-base text-black"
+            className="w-full font-bold text-black"
             href="/contacto"
             size="lg"
           >
             Contacto
           </Link>
         </NavbarMenuItem>
-      
-          <Button
+      <div>
+        <Button
          
             onClick={handleDownload}
             color="secondary"
@@ -474,6 +474,8 @@ export default function CustomNavbar() {
           >
             Descargar CV
           </Button>
+      </div>
+          
          
       </NavbarMenu>
     </Navbar>

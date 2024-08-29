@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactPhone from "../ContactPhone";
+import ContactNet from "../ContactNet";
 function Contacto() {
   const form = useRef();
   const [alert, setAlert] = useState({ type: "", message: "" });
@@ -74,6 +75,9 @@ function Contacto() {
         )}
 
         <div className="w-full md:w-1/2 p-2 box-border flex justify-center">
+        <div
+        className="w-full lg:ml-28"
+        >
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col w-full max-w-md lg:mt-10 sm:mt-2 space-y-4">
               <input
@@ -103,16 +107,34 @@ function Contacto() {
               </div>
             </div>
           </form>
+          </div>
         </div>
         <div className="w-full md:w-1/2 p-2 box-border flex justify-center">
           {/* Contenido del segundo div */}
-          <div className="flex flex-col w-full max-w-md space-y-4">
+          <div className="flex flex-col  w-full max-w-md space-y-4">
             <div
-            className="w-42"
+            className=""
             >
-                <ContactPhone/>
+                    <div className="divider divider-end px-2 divider-secondary ml-4 text-2xl text-white">Medios</div> {/* Ajusta el alignment del divider aquí */}
+
+              <p
+              className="sm:text-center lg:text-end text-white"
+              >Estoy disponible para consultas y colaboraciones a través de diversos canales. Puedes contactarme directamente por teléfono, WhatsApp, o Telegram para una respuesta rápida y personal. Si prefieres un enfoque más formal o detallado, también puedes enviarme un correo electrónico. Estoy aquí para ayudarte y responder a cualquier pregunta que puedas tener</p>
             </div>
-          
+            <div className="w-full flex lg:justify-start justify-center lg:items-start items-center">
+    <ContactPhone />
+</div>
+
+<div>
+<div className="divider divider-start px-2 divider-secondary ml-4 text-2xl text-white">Redes</div> {/* Ajusta el alignment del divider aquí */}
+<p
+              className="sm:text-center lg:text-start text-white"
+
+>Conéctate conmigo en redes sociales para estar al tanto de mis últimos proyectos y colaboraciones. Puedes encontrarme en GitHub, donde comparto mi trabajo en desarrollo, y en LinkedIn, donde actualizo mi experiencia profesional. También estoy presente en X, Facebook, e Instagram, donde comparto ideas, noticias y momentos clave de mi carrera. ¡Sígueme y mantente al tanto de lo que hago!</p>
+</div>
+<div className="w-full flex lg:justify-end justify-center lg:items-start items-center">
+    <ContactNet />
+</div>
             {/* Aquí puedes agregar el contenido del segundo div */}
           </div>
         </div>
