@@ -8,4 +8,4 @@ services:
     image: portfolioSebas
     container_name: portfolioSebas
     ports:
-      - "5005:80"
+      - "3005:80"
