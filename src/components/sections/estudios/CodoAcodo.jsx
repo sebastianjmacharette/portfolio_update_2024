@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import codo1 from '../../../assets/img/codo/Codo1.png';
+import codo2 from '../../../assets/img/codo/desingui.png';
  
 
 function CodoAcodo() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const images = [codo1]; // Imágenes importadas
+  const images = [codo1, codo2]; // Imágenes importadas
 
   const openModal = (image) => {
     setSelectedImage(image);

@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolioSebas
+    container_name: portfolioSebas
+    ports:
+      - "5001:80"
