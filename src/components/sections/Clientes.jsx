@@ -8,49 +8,48 @@ import Lem from '../clientes/Lem';
 
 function Clientes() {
   return (
-    <div
-    className='bg-slate-700 overflow-auto'
-    >
-         <div className="divider divider-secondary text-white text-2xl">Clientes satisfechos</div>
-
-    <div className='bg-slate-700 overflow-auto'>
-      <div className="flex flex-wrap">
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <MolachinoViajes />
+    <div className='bg-slate-700 overflow-auto mx-auto'>
+      <div className='text-center mb-4'>
+        <p className="divider divider-secondary text-white text-2xl">Clientes satisfechos</p>
+      </div>
+      <div className='bg-slate-700 overflow-auto'>
+        <div className="flex flex-wrap justify-center">
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <MolachinoViajes />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <BelenDoctora />
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <BelenDoctora />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <Giachetta />
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <Giachetta />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <Roich />
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <Roich />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <Ranqueles />
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <Ranqueles />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full">
-            <Lem />
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full">
+              <Lem />
+            </div>
           </div>
-        </div>
-        <div className="w-full md:w-1/3 p-4">
-          <div className="w-full"></div>
+          <div className="w-full md:w-1/3 p-4">
+            <div className="w-full"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="divider px-4 divider-end divider-secondary text-white text-2xl">Clientes </div>
+      <div className="divider px-4 divider-end divider-secondary text-white text-2xl text-center mt-4">Clientes</div>
     </div>
   );
 }

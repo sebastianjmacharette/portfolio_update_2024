@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../../assets/img/hero.webp';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { FiUser, FiYoutube } from "react-icons/fi";
 
 function Home() {
   const navigate = useNavigate();
@@ -9,7 +10,9 @@ function Home() {
   const handleClick = () => {
     navigate('/sobre-mi');
   };
-
+  const handleClickCanal = () => {
+    window.open('https://youtube.com/@laboratoriodecodigoydiseno?si=qTekkooLEoRnXiwt', '_blank');
+  };
   return (
     <div
       className="relative min-h-screen h-screen bg-cover bg-center"
@@ -55,13 +58,25 @@ function Home() {
               sobre mí, mis <span className='bg-secondary'>estudios y proyectos</span>."
             </p>
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
-              className="mt-4 flex w-full justify-end sm:mb-40"
-            >
-              <button onClick={handleClick} className="btn btn-outline text-white">Conóceme!</button>
-            </motion.div>
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="mt-4 flex flex-col md:flex-row w-full justify-end gap-4 sm:mb-40"
+>
+  <button 
+    onClick={handleClick} 
+    className="btn bg-secondary text-white flex items-center gap-2"
+  >
+    <FiUser /> Conóceme!
+  </button>
+
+  <button 
+    onClick={() => window.open('https://youtube.com/@laboratoriodecodigoydiseno?si=qTekkooLEoRnXiwt', '_blank')}
+    className="btn bg-secondary text-white flex items-center gap-2"
+  >
+    <FiYoutube /> Mi canal de Youtube
+  </button>
+</motion.div>
           </motion.div>
         </motion.div>
       </div>
